@@ -12,7 +12,7 @@ The demo intentionally uses entirely fictional records with three fields: an ope
 | CONTRADICTED | The illustrative observation exists and disagrees with the claim |
 | UNSUPPORTED | No illustrative authoritative observation is supplied |
 
-The fourth sample depicts an acknowledged operation that has no observation, to show why uncertainty must be retained.
+The third sample depicts a success claim with no observation, to show why uncertainty must be retained. The fourth depicts a fictional lost acknowledgement (caller status UNKNOWN) while an illustrative observation says SUCCEEDED; the simplistic demo marks this mismatch CONTRADICTED without establishing that a real failure occurred.
 
 ## Exclusions
 
