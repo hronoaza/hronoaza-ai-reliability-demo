@@ -1,29 +1,37 @@
 # HRONOAZA — Commercial Engagement & Licensing
 
 **Contact:** hronoaza00@gmail.com  
-**Rights holder:** Mykola Bezruchko
+**Named rights holder:** Mykola Bezruchko (subject to confirmation of rights and contracting capacity before execution).
 
-## Services available for quotation
+This document is a **non-binding description of potential engagements**, not an offer that becomes a contract through website access, email, or repository use.
 
-- **AI Workflow Reliability Assessment:** Scope one workflow, identify authoritative evidence sources, analyze outcome mismatches and failure/retry modes, and deliver a findings report, contradiction register, and prioritized remediation recommendations.
-- **Custom Reliability Integration:** Implement customer-specific evidence checks, operation correlation, monitoring, fail-closed controls where appropriate, testing, and documented acceptance in the customer's infrastructure.
-- **Ongoing Engineering Support:** Separately agreed maintenance, investigation, periodic checks, and improvement work.
+## Services offered for quotation
 
-All schedules, prices, performance obligations, infrastructure costs, service levels, and deliverables are **negotiated case by case**. This page is not a binding quote or guarantee.
+- **AI Workflow Reliability Assessment:** Scope one workflow, identify evidence sources, review claim/observation mismatches and failure/retry modes, and deliver a findings report, contradiction register, and prioritized recommendations.
+- **Custom Reliability Integration:** Customer-scoped design and implementation of operation correlation, verification controls, observability, testing, and documented acceptance in an agreed environment.
+- **Ongoing Engineering Support:** Separately contracted maintenance, incident investigation, and improvements.
 
-## Intellectual-property baseline
+Prices, duration, technical outcomes, availability commitments, acceptance criteria, and liability are **negotiated in writing**. No performance, regulatory-compliance, security-certification, or production-readiness guarantee is made by this page.
 
-1. **Pre-existing HRONOAZA technologies and materials remain with their rights holder.** No transfer, work-made-for-hire treatment, exclusive license, or source-code delivery arises from a demonstration or initial discussion.
-2. **Customer-owned data and customer-provided materials** remain subject to the customer's rights and a negotiated data-processing/confidentiality agreement.
-3. **New commissioned deliverables** and related usage rights must be identified specifically in the signed statement of work; any transfer must be explicit and appropriately compensated.
-4. **Production deployment** may require client-managed infrastructure, operational access, key custody, independent administrator/verifier roles, third-party services, and an acceptance plan. These responsibilities are allocated in the contract.
+## Intellectual-property boundaries
 
-## What a proposal should specify
+1. **Background IP:** All inventions, source code, tools, libraries, methodologies, documentation, research, and know-how owned or controlled by either party before the engagement, or developed independently outside its agreed scope, remain with their respective rights holders. The existence and ownership of any particular component must be verified.
+2. **No automatic transfer:** Access to a public demonstration, discovery call, pilot, or paid assessment does not itself transfer HRONOAZA background IP, confer exclusivity, or entitle the customer to private source code.
+3. **Foreground deliverables:** The signed statement of work must identify newly commissioned deliverables and specify ownership, permitted use, source delivery, licensing, derivative rights, and any expressly agreed transfer or exclusivity. No blanket assignment is presumed.
+4. **Embedded background components:** If commissioned deliverables require background components, the agreement must expressly define a license sufficient for the agreed customer use, its duration, deployment scope, restrictions, and any fees. Background IP is not silently assigned with deliverables.
+5. **Third-party materials:** Open-source, third-party, customer-owned and platform components retain their applicable licenses and rights; none can be relicensed beyond the provider's authority.
+6. **Customer data and confidentiality:** Access, storage, processing, retention, security responsibilities, and any cross-border transfers require a written arrangement appropriate to the actual data and jurisdictions.
 
-The client's entity and authorized signatory; covered systems; permitted use and licensed versions; verification acceptance criteria; dependencies and required access; milestones and fees; IP ownership/licensing; confidentiality; applicable data-protection obligations; security responsibilities; incident/support hours; warranties/liability; termination; governing law and dispute resolution.
+## Production and acceptance
 
-## No automatic rights
+Real deployments may require customer-funded infrastructure, system-of-record access, independently operated witness or verifier roles, appropriate key custody, and a jointly approved acceptance plan. Such roles cannot be claimed independent merely because one provider implements several components.
 
-The public repository is an evaluation-only showcase under [LICENSE.md](LICENSE.md). Publication does not grant commercial exploitation rights, provide access to private implementations, or authorize use of HRONOAZA trademarks or other protected identifiers.
+A contract should identify the legal entities and authorized signatories; deliverables and milestones; fees and taxes; licensing and background IP schedules; warranties and limits of liability; data and security terms; support; termination; dispute resolution; governing law; and any jurisdiction-specific mandatory rules.
 
-For a scoped proposal: **hronoaza00@gmail.com**.
+## Public demonstration
+
+The public showcase is governed by [LICENSE.md](LICENSE.md), including limited internal evaluation and GitHub platform rights. Publication is not a grant of commercial exploitation rights or access to private research and implementation.
+
+**Request a scoped proposal:** hronoaza00@gmail.com
+
+Legal counsel should review a negotiated agreement in the applicable jurisdiction before signature.
