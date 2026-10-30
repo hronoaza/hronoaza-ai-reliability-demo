@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>HRONOAZA | Operation Evidence Demonstration</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#f0f5fd;background:#0b1220}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:34px 22px 68px}.eyebrow{letter-spacing:.2em;color:#66dbd0;font-size:12px;font-weight:750}.lead{max-width:760px;color:#bac6d7;font-size:18px;line-height:1.65}h1{font-size:clamp(34px,5vw,60px);line-height:1.06;margin:18px 0}.accent{color:#62e2cc}a{color:#8bd9ff}.top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.top a{font-size:13px}.panel{background:#131f32;border:1px solid #2b3d57;border-radius:16px;padding:22px;margin-top:23px}.small{font-size:13px;color:#b7c5d8}.records{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px;margin-top:18px}button{font:inherit;cursor:pointer;padding:15px;border-radius:12px;background:#1a2b43;border:1px solid #395371;color:#f1f5fa;text-align:left;transition:background .15s}button:hover{background:#253b58}button[aria-pressed=true]{border-color:#68e5d0;box-shadow:inset 0 0 0 1px #68e5d0}.status{font-weight:800;letter-spacing:.08em}.status.VERIFIED{color:#7cddb4}.status.CONTRADICTED{color:#ff9a9a}.status.UNSUPPORTED{color:#f3c878}.details{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:16px}.datum{padding:14px;border-radius:12px;background:#0d1727;border:1px solid #253a54;overflow-wrap:anywhere}.value{font-weight:750;margin-top:7px;font-size:18px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.foot{margin-top:30px;color:#9aacc5;font-size:13px;line-height:1.7}code{color:#d8e5fa}.cta{display:inline-block;background:#2bd4b0;color:#071a22;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:800;margin-top:14px}.cta:hover{background:#89efdc}
+</style>
+</head>
+<body>
+<main>
+<div class="top"><div class="eyebrow">HRONOAZA / AI ENGINEERING &amp; RELIABILITY</div><a href="mailto:hronoaza00@gmail.com">Discuss a workflow →</a></div>
+<h1>Your systems should do <span class="accent">what they say they do.</span></h1>
+<p class="lead">A success or failure message is a <strong>claim</strong>. What independently observable effect supports it? Select a fictional operation below to explore how missing and conflicting evidence change a decision.</p>
+<section class="panel" aria-label="Interactive synthetic evidence demonstration">
+<div class="row"><h2 style="margin:0">Explore the outcome</h2><span class="small">OFFLINE • SYNTHETIC • NO LIVE SYSTEMS</span></div>
+<div class="records" id="options"></div>
+<div class="details" aria-live="polite">
+<div class="datum"><div class="small">Automated system claims</div><div class="value" id="claim"></div></div>
+<div class="datum"><div class="small">Illustrative observation</div><div class="value" id="observed"></div></div>
+<div class="datum"><div class="small">Evidence classification</div><div class="value status" id="verdict"></div></div>
+</div>
+<p class="small" id="reason"></p>
+</section>
+<section class="panel"><h2>What HRONOAZA can do for your business</h2><p class="lead" style="font-size:16px">Assess one critical workflow, identify false or unsupported completion claims, and design evidence-aware reliability controls for your actual infrastructure. We define acceptance criteria, evidence ownership, and operating responsibilities with you before implementation.</p><a class="cta" href="mailto:hronoaza00@gmail.com?subject=HRONOAZA%20Reliability%20Assessment">Request a scoped assessment</a></section>
+<p class="foot"><strong>Scope:</strong> This webpage uses invented values and a simple comparison rule; it does not authenticate the illustrative observation or execute an operation. “VERIFIED” means only that two provided fictional fields match. No live database, customer data, external verifier, or proprietary internal technology is included. Commercial rights are governed by <a href="LICENSE.md">LICENSE.md</a> and <a href="COMMERCIAL_TERMS.md">COMMERCIAL_TERMS.md</a>. © 2026 Mykola Bezruchko. All rights reserved.</p>
+</main>
+<script>
+"use strict";
+const examples=Object.freeze([
+  Object.freeze({name:"Matching outcome",claim:"SUCCEEDED",observed:"SUCCEEDED",why:"The two illustrative fields agree. This does not prove that a real transaction occurred."}),
+  Object.freeze({name:"Contradictory report",claim:"FAILED",observed:"SUCCEEDED",why:"The claim conflicts with the illustrative observed result. The mismatch must be investigated."}),
+  Object.freeze({name:"No confirmation",claim:"SUCCEEDED",observed:null,why:"No authoritative observation is available in this example. A claim alone cannot be verified."}),
+  Object.freeze({name:"Lost acknowledgement",claim:"UNKNOWN",observed:"SUCCEEDED",why:"The fictional observation differs from the caller's unknown status. The example records a discrepancy, not a proven recovery."})
+]);
+function classify(e){return e.observed===null?"UNSUPPORTED":e.claim===e.observed?"VERIFIED":"CONTRADICTED"}
+function show(i){const e=examples[i];document.querySelectorAll("#options button").forEach((b,n)=>b.setAttribute("aria-pressed",String(n===i)));document.getElementById("claim").textContent=e.claim;document.getElementById("observed").textContent=e.observed===null?"NOT AVAILABLE":e.observed;const status=classify(e),out=document.getElementById("verdict");out.className="value status "+status;out.textContent=status;document.getElementById("reason").textContent=e.why}
+const holder=document.getElementById("options");
+examples.forEach((e,i)=>{const b=document.createElement("button");b.type="button";b.textContent=e.name;b.setAttribute("aria-pressed","false");b.addEventListener("click",()=>show(i));holder.appendChild(b)});show(0);
+</script>
+</body>
+</html>
