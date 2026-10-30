@@ -6,6 +6,12 @@ AI agents, integrations, and backend automations can report outcomes that are mi
 
 **[Try the offline interactive demonstration](demo.html)** · **[Engagement options](SERVICES.md)** · **[Commercial licensing](COMMERCIAL_TERMS.md)** · **Contact: [hronoaza00@gmail.com](mailto:hronoaza00@gmail.com)**
 
+## Article: Why completion claims need evidence
+
+**[Your AI Agent Says “Success.” Where Is the Evidence?](https://www.linkedin.com/pulse/your-ai-agent-says-success-where-evidence-tony-baran-othhf/)** — an introduction to evidence-based AI workflow reliability, operational uncertainty, and the business risks of unverified automation outcomes.
+
+The [article source](articles/your-ai-agent-says-success-where-is-the-evidence.md) is retained in this repository.
+
 ## What we offer
 
 | Engagement | Value to the client |
